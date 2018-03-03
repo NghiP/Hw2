@@ -1,0 +1,226 @@
+{
+	"info": {
+		"name": "Hw2",
+		"_postman_id": "264e3055-946e-b9b4-9183-ba1f576f8b67",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://limitless-anchorage-20180.herokuapp.com/get",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "hi",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "testuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"test \" : \"test\" }"
+				},
+				"url": {
+					"raw": "https://limitless-anchorage-20180.herokuapp.com/get",
+					"protocol": "https",
+					"host": [
+						"limitless-anchorage-20180",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				},
+				"description": "Get Request succeeded launching on Heroku. No query parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "https://limitless-anchorage-20180.herokuapp.com/get",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "hi",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "testuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"test \" : \"test\" }"
+				},
+				"url": {
+					"raw": "https://limitless-anchorage-20180.herokuapp.com/get",
+					"protocol": "https",
+					"host": [
+						"limitless-anchorage-20180",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				},
+				"description": "Get Request failed because I try to get on a post. No query parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "https://limitless-anchorage-20180.herokuapp.com/deletes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Nghi",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "cu",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"test \" : \"test\" }"
+				},
+				"url": {
+					"raw": "https://limitless-anchorage-20180.herokuapp.com/deletes/?q=hi",
+					"protocol": "https",
+					"host": [
+						"limitless-anchorage-20180",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hi",
+							"equals": true
+						}
+					]
+				},
+				"description": "Deletes request success with correct password and Query parameter hi"
+			},
+			"response": []
+		},
+		{
+			"name": "https://limitless-anchorage-20180.herokuapp.com/deletes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "random",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Nghi",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"test \" : \"test\" }"
+				},
+				"url": {
+					"raw": "https://limitless-anchorage-20180.herokuapp.com/deletes/?q=hi",
+					"protocol": "https",
+					"host": [
+						"limitless-anchorage-20180",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deletes",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "hi",
+							"equals": true
+						}
+					]
+				},
+				"description": "Deletes request failed with incorrect password"
+			},
+			"response": []
+		}
+	]
+}
